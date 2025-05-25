@@ -24,7 +24,7 @@ def submit_form():
 
     try:
         server = smtplib.SMTP_SSL("smtp.gmail.com", 465)
-        server.login("mail.me.akashdip2001@gmail.com", "svdcklfdwphyrdvr")
+        server.login("mail.me.akashdip2001@gmail.com", "svdoklfdwphyrdvr")
         server.send_message(msg)
         server.quit()
         return jsonify({"status": "success"}), 200
